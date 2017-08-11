@@ -11,3 +11,5 @@ db.pets.find();
 db.pets.find({proprietario:'mario'})
 
 db.pets.find({idade:{$gt:2}})
+
+db.pets.find({$or:[{idade:2},{idade:3} ]})

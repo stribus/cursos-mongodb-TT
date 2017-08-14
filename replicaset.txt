@@ -16,14 +16,14 @@ rsconf = {
            members: [
                       {
                        _id: 0,
-                       host: "SL02PC05:27017"
+                       host: "SL02PC09:27017"
                       }
                     ]
          }
 rs.initiate( rsconf )
-         rs.conf()
-rs.add("SL02PC05:27018")
-rs.add("SL02PC05:27019")
+rs.conf()
+rs.add("SL02PC09:27018")
+rs.add("SL02PC09:27019")
          
          rs.status()
          

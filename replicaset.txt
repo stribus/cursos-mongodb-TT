@@ -1,3 +1,4 @@
+//rodar no cmd
 mongod --port 27017 --dbpath C:\data\rs0-0 --replSet rs0 --smallfiles --oplogSize 128
 
 
@@ -26,13 +27,20 @@ rs.conf()
 rs.add("SL02PC09:27018")
 rs.add("SL02PC09:27019")
 rs.status()         
-         
+db.isMaster()         
+		 
+		 
+		 
 use petshop
+db.pet.insertMany([
+{nome:'toto',idade:1},
+{nome:'Rex',idade:2},
+{nome:'Pity',idade:7},
+{nome:'Billy',idade:5},
+{nome:'Mel',idade:3},
+])
 
-db
-
-db.pets.insert({})
-db.pets.find()
+db.pet.find()
 
 db.pets.find()
 rs.slaveOk()

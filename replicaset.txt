@@ -42,6 +42,5 @@ db.pet.insertMany([
 
 db.pet.find()
 
-db.pets.find()
-rs.slaveOk()
+
 db.getMongo()

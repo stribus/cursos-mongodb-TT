@@ -20,12 +20,12 @@ rsconf = {
                       }
                     ]
          }
+         
 rs.initiate( rsconf )
 rs.conf()
 rs.add("SL02PC09:27018")
 rs.add("SL02PC09:27019")
-         
-         rs.status()
+rs.status()         
          
 use petshop
 
